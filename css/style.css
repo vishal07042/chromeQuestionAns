@@ -12,7 +12,7 @@ body {
 }
 #question-box {
   width: 60vw;
-  margin: 7vh auto 0;
+  margin: 6vh auto 0;
   padding: 30px 30px 100px;
   border-radius: 10px;
   background-color: #000000;
@@ -141,4 +141,16 @@ button:hover {
   margin-top: 10px;
   padding-top: 5px;
 }
+
+pre{
+  font-size: 20px;
+}
+
+
+.flip{
+  transform: rotateX(180deg);
+}
+
+
+
 
