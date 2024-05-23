@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link href="./css/style.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
 
-    
-    <style>
-      /* Disable scrolling */
-      body {
-        overflow: hidden;
-      }
-    </style>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-    <title>New Tab</title>
-  </head>
 
-  <body>
-    
+  <style>
+    /* Disable scrolling */
+    body {
+      overflow: hidden;
+    }
+  </style>
 
-    <!-- part1  -->
-    <div id="question-box">
-      <div class="content">
-        <p class="insert-question" id="question"></p>
-      </div>
-      <p class="insert-question" id="input"></p>
-      <p class="insert-question" id="output"></p>
-      <p class="insert-question" id="explanation"></p>
 
-      <div class="controls">
-        <p class="insert-author" id="source"></p>
-        <p class="insert-author" id="topic"></p>
-      </div>
+  <title>New Tab</title>
+</head>
+
+<body>
+
+
+  <!-- part1  -->
+  <div id="question-box">
+    <div class="content">
+      <p class="insert-question" id="question"></p>
     </div>
+    <p class="insert-question" id="input"></p>
+    <p class="insert-question" id="output"></p>
+    <p class="insert-question" id="explanation"></p>
 
-    <div id="button-box">
-      <button id="btn">
-        <a id="solve" target="_blank" class="next"
-          >Solve Now
-          <img height="12" width="12" style="margin-left: 5px" src="link.png" />
-        </a>
-      </button>
+    <div class="controls">
+      <p class="insert-author" id="source"></p>
+      <p class="insert-author" id="topic"></p>
     </div>
-    <!-- part 1 end -->
+  </div>
 
-    <!-- part2  -->
-    <div id="question-box">
+  <div id="button-box">
+    <button id="btn">
+      <a id="solve" target="_blank" class="next">Solve Now
+        <img height="12" width="12" style="margin-left: 5px" src="link.png" />
+      </a>
+    </button>
+  </div>
+  <!-- part 1 end -->
+
+  <!-- part2  -->
+  <!-- <div id="question-box">
       <div class="content">
         <p class="insert-question" id="question2"></p>
       </div>
@@ -74,24 +71,25 @@
       <button id="btn" class="leetcode">
         leetcode
       </button>
-    </div>
-    <!-- part 2 end -->
+    </div> -->
+  <!-- part 2 end -->
 
 
-    <!-- part3 -->
+  <!-- part3 -->
 
-    <!-- <div id="question-box">
+  <div id="question-box" class="question-box3" style="margin-top: 15px; background-color: rgb(24, 37, 33)">
       <div class="content">
         <p class="insert-question" id="question3"></p>
+        <p class="insert-question" id="input3" style="font-size: 25px"></p>
       </div>
-    </div> -->
+    </div>
 
-    <script src="newtab.js"></script>
+  <script src="newtab.js"></script>
 
 
 
-    
-  </body>
-  
-  
+
+</body>
+
+
 </html>

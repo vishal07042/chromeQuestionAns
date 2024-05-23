@@ -17,24 +17,30 @@ chrome.runtime.sendMessage({ message: "getRandomQuestion" }, (response) => {
 		document.getElementById("solve").href = response[0].link_to_solve;
 	}
 
-	if (response && response[1]) {
-		document.getElementById("question2").innerText =
-			response[1]["Problem: "];
-		if (response[1].URL) {
-			let so = response[1].URL.split("/")[2].split(".");
+	// if (response && response[1]) {
+	// 	document.getElementById("question2").innerText =
+	// 		response[1]["Problem: "];
+	// 	if (response[1].URL) {
+	// 		let so = response[1].URL.split("/")[2].split(".");
 
-			document.getElementById("source2").innerText = "Source: " + so[1];
-		}
+	// 		document.getElementById("source2").innerText = "Source: " + so[1];
+	// 	}
 
-    	document.getElementById("topic2").innerText =
-			"Topic: " + response[1]["Topic:"];
+    // 	document.getElementById("topic2").innerText =
+	// 		"Topic: " + response[1]["Topic:"];
 
-      document.getElementById("solve2").href = response[1].URL;
+    //   document.getElementById("solve2").href = response[1].URL;
 
-      document.querySelector(".leetcode").addEventListener("click", () => {
+    //   document.querySelector(".leetcode").addEventListener("click", () => {
 
-        let vall = response[1]["Problem: "]
-        window.open(`https://www.google.com/search?q=${vall}:leetcode`, "_blank");
-      });
+    //     let vall = response[1]["Problem: "]
+    //     window.open(`https://www.google.com/search?q=${vall}:leetcode`, "_blank");
+    //   });
+	// }
+
+
+	if(response && response[2]){
+		document.getElementById("question3").innerText = response[2].title;
+		document.getElementById("input3").innerHTML = `<pre>${response[2].code}</pre>`;
 	}
 });
