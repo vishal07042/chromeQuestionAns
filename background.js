@@ -7141,7 +7141,7 @@ setInterval(() => {
   constque3 = queLydia[Math.floor(Math.random() * queLydia.length)];
   
  
-}, 24*60*60*1000);
+}, 24*60*60*1000); //setinterval for time
 
 
 
